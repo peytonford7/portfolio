@@ -4,38 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peyton Ford - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Peyton Ford</h1>
     <p>Software Technician</p>
 
-    <p>
-      <a href="#about">About</a> |
-      <a href="#experience">Experience</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </p>
+    <div class="d-flex" aria-label="Section Buttons">
+      <a class="btn btn-primary" href="#about">About</a>
+      <a class="btn btn-primary" href="#experience">Experience</a>
+      <a class="btn btn-primary" href="#projects">Projects</a>
+      <a class="btn btn-primary" href="#contact">Contact</a>
+    </div>
 
     <h2>Profile</h2>
-    <img src="./assets/profile-pic.png" alt="Profile picture" width="250" />
+    <img src="./assets/profile-pic.png" alt="Profile picture" width="500" />
     <p>
-      <a href="./assets/Peyton-Ford-Resume.pdf">Download Resume</a> |
-      <a href="#contact">Contact Info</a>
+      <a class="btn btn-primary" role="button" href="./assets/Peyton-Ford-Resume.pdf">Download Resume</a>
+      <a class="btn btn-primary" href="#contact">Contact Info</a>
     </p>
     <p>
       <a href="https://www.linkedin.com/in/peyton-ford-58234b168">
         <img src="./assets/linkedin.png" alt="LinkedIn" width="32" />
       </a>
       <a href="https://github.com/peytonford7">
-        <img src="./assets/github.png" alt="Github" width="32" />
+        <img src="./assets/github.png" alt="GitHub" width="32" />
       </a>
     </p>
 
     <hr />
 
     <h2 id="about">About Me</h2>
-    <img src="./assets/about-pic.png" alt="About" width="250" />
+    <img src="./assets/about-pic.png" alt="About" width="500" />
 
     <h3>Experience</h3>
     <p>Software Technician<br />Full-Stack Development</p>
@@ -64,7 +65,7 @@
     <h3>Software & Systems</h3>
 
     <p>
-      <img src="./assets/checkmark.png" alt="-" width="20" />
+      <img src="./assets/checkmark.png" alt="-" width="32" />
       <strong>Software Technician – Eagle Eye Networks</strong><br />
       Contribute to software updates by refining, testing, and validating
       changes that flow through device and cloud pipelines for network
@@ -72,14 +73,14 @@
     </p>
 
     <p>
-      <img src="./assets/checkmark.png" alt="-" width="20" />
+      <img src="./assets/checkmark.png" alt="-" width="32" />
       <strong>Linux & Firmware Configuration</strong><br />
       Set up and configure firmware, Linux-based operating systems, and
       application software for secure, cloud-connected camera devices.
     </p>
 
     <p>
-      <img src="./assets/checkmark.png" alt="-" width="20" />
+      <img src="./assets/checkmark.png" alt="-" width="32" />
       <strong>Docker & AWS Integration</strong><br />
       Work with containerized services (Docker) and AWS-hosted systems as
       part of validating and deploying devices to production environments.
@@ -88,7 +89,7 @@
     <h3>Development & Tooling</h3>
 
     <p>
-      <img src="./assets/checkmark.png" alt="-" width="20" />
+      <img src="./assets/checkmark.png" alt="-" width="32" />
       <strong>Python & Go Scripts</strong><br />
       Contribute to and maintain scripts and configuration logic in
       Python/Go for automated testing, device provisioning, and
@@ -96,14 +97,14 @@
     </p>
 
     <p>
-      <img src="./assets/checkmark.png" alt="-" width="20" />
+      <img src="./assets/checkmark.png" alt="-" width="32" />
       <strong>Troubleshooting & QA</strong><br />
       Validate software behavior using logs, diagnostic tools, and test
       procedures to identify issues and support fixes in the pipeline.
     </p>
 
     <p>
-      <img src="./assets/checkmark.png" alt="-" width="20" />
+      <img src="./assets/checkmark.png" alt="-" width="32" />
       <strong>Team Collaboration</strong><br />
       Work with engineers and technicians to reproduce bugs, refine test
       cases, and ensure devices meet quality and performance standards.
@@ -114,7 +115,7 @@
     <h2 id="projects">Projects</h2>
 
     <h3>Development Environment Launcher</h3>
-    <img src="./assets/project-1.png" alt="Project 1" width="2000" />
+    <img src="./assets/project-1.png" alt="Project 1" width="1000" />
     <p>
       A bash application that builds and streamlines development of software
       projects through a CLI. This is including running builds, compilation,
@@ -122,11 +123,11 @@
       from compiled and scripting languages, data processing, as well as web-based frameworks.
     </p>
     <p>
-      <a href="https://github.com/peytonford7/dev-env-launcher">Github</a> |
+      <a class="btn btn-primary" href="https://github.com/peytonford7/dev-env-launcher">GitHub</a>
     </p>
 
     <h3>Mock Jury Trials Website</h3>
-    <img src="./assets/project-2.png" alt="Project 2" width="2000" />
+    <img src="./assets/project-2.png" alt="Project 2" width="1000" />
     <p>
       A website to help defense attorneys prepare for jury trials by providing a 
       platform to create and manage mock trials. The site includes features for
@@ -138,20 +139,21 @@
     <h2 id="contact">Contact Me</h2>
 
     <p>
-      <img src="./assets/email.png" alt="Email" width="24" />
-      <a href="mailto:peytonford7@gmail.com">peytonford7@gmail.com</a>
+      <img src="./assets/email.png" alt="Email" width="32" />
+      <a class="btn btn-dark" href="mailto:peytonford7@gmail.com">peytonford7@gmail.com</a>
     </p>
 
     <p>
-      <img src="./assets/linkedin.png" alt="LinkedIn" width="24" />
-      <a href="https://www.linkedin.com/in/peyton-ford-58234b168">LinkedIn</a>
+      <img src="./assets/linkedin.png" alt="LinkedIn" width="32" />
+      <a class="btn btn-dark" href="https://www.linkedin.com/in/peyton-ford-58234b168">LinkedIn</a>
     </p>
 
-    <p>
-      <a href="#about">About</a> |
-      <a href="#experience">Experience</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </p>
+    <div class="d-flex" aria-label="Section Buttons">
+      <a class="btn btn-primary" href="#about">About</a>
+      <a class="btn btn-primary" href="#experience">Experience</a>
+      <a class="btn btn-primary" href="#projects">Projects</a>
+      <a class="btn btn-primary" href="#contact">Contact</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
