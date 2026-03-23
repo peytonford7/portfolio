@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,75 +8,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar border-bottom" style="background-color: lightgray;" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg border-bottom bg-grey">
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://github.com/peytonford7">
-          <h1>Peyton Ford</h1>
-          <img src="./assets/github.png" alt="GitHub" width="100" d-inline-block align-text-top />
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-blue" href="#about"><h3><strong>About</strong></h3></a>
+            <a class="nav-link text-blue" href="#experience"><h3><strong>Experience</strong></h3></a>
+            <a class="nav-link text-blue" href="#projects"><h3><strong>Projects</strong></h3></a>
+            <a class="nav-link text-blue" href="#contact"><h3><strong>Contact</strong></h3></a>
+          </div>
+        </div>
+        <a href="https://github.com/peytonford7">
+          <img src="./assets/github.png" alt="GitHub" width="75" d-inline-block align-text-top />
         </a>
-        <a class="navbar-brand" href="https://www.linkedin.com/in/peyton-ford-58234b168">
-          <img src="./assets/linkedin.png" alt="LinkedIn" width="100" d-inline-block align-text-top />
+        <a href="https://www.linkedin.com/in/peyton-ford-58234b168">
+          <img src="./assets/linkedin.png" alt="LinkedIn" width="75" d-inline-block align-text-top />
         </a>
       </div>
     </nav>
-    
 
-    <div aria-label="Section Buttons">
-      <a class="btn btn-primary" href="#about">About</a>
-      <a class="btn btn-primary" href="#experience">Experience</a>
-      <a class="btn btn-primary" href="#projects">Projects</a>
-      <a class="btn btn-primary" href="#contact">Contact</a>
-    </div>
-    <h2 id="about">About Me</h2>
-
-    <div class="card-group">
-      <div class="card flex-row" style="min-height: 38vh;"><img class="card-img-top img-fluid h-100 object-fit-cover" style="width: 30vw;" src="./assets/profile-pic.png" alt="Education" />
-        <div class="card-body">
-          <h2 class="card-title"><strong>Education</strong></h2>
-          <div class="card-text">
-            <h3>B.S. Computer Science<br />The University of Texas at Dallas</h3>
-            <p>
-              I have a B.S. in Computer Science from The University of Texas at Dallas.
-              I’ve taken courses in data structures, algorithms, operating systems, and
-              software engineering, and I’ve built projects in Python, Java, C++, and
-              web-based frameworks. I’m focused on growing into a full-time software
-              engineering role where I can contribute my skills to products, systems,
-              while improving my skills, and collaborating with a strong team.
-            </p>
-          </div>
-          <a class="btn btn-primary" role="button" href="./assets/Peyton-Ford-Resume.pdf">Download Resume</a>
-          <a class="btn btn-primary" href="#contact">Contact Info</a>
+    <div class="card flex-row border-0" id="about"><img class="card-img-top img-fluid h-100 object-fit-cover rounded-circle" style="width: 20vw;" src="./assets/about-pic.png" alt="Experience" />
+      <div class="card-body">
+        <h2 class="card-title text-blue" id="experience"><strong>Experience</strong></h2>
+        <div class="card-text">
+          <h3 class="text-lightblue">Software Technician | Systems and Full-Stack Development</h3>
+          <p class="text-white">
+            I’m an entry-level software engineer who enjoys building practical tools,
+            working with networked devices, and learning by doing. I’ve worked with
+            Linux systems, Docker, and cloud-connected camera devices in a
+            manufacturing environment, and I like understanding and manipulating how 
+            software and hardware can come together end-to-end. My projects range from 
+            a CLI script for streamlining development projects
+            to a mock jury trials website. I’m focused on growing into a full-time
+            software engineering role where I can contribute my skills to products, 
+            systems, while improving my skills, and collaborating with a strong team.
+          </p>
+          <h2 class="text-blue"><strong>Education</strong></h2>
+          <h3 class="text-lightblue">B.S. Computer Science | The University of Texas at Dallas</h3>
+          <p class="text-white">
+            I have a B.S. in Computer Science from The University of Texas at Dallas.
+            I’ve taken courses in data structures, algorithms, operating systems, and
+            software engineering, and I’ve built projects in Python, Java, C++, and
+            web-based frameworks. I’m focused on growing into a full-time software
+            engineering role where I can contribute my skills to products, systems,
+            while improving my skills, and collaborating with a strong team.
+          </p>
         </div>
-      </div>
-      <div class="card flex-row" style="min-height: 38vh;"><img class="card-img-top img-fluid h-100 object-fit-cover" style="width: 30vw;" src="./assets/about-pic.png" alt="Experience" />
-        <div class="card-body">
-          <h2 class="card-title"><strong>Experience</strong></h2>
-          <div class="card-text">
-            <h3>Software Technician<br />Full-Stack Development</h3>
-            <p>
-              I’m an entry-level software engineer who enjoys building practical tools,
-              working with networked devices, and learning by doing. I’ve worked with
-              Linux systems, Docker, and cloud-connected camera devices in a
-              manufacturing environment, and I like understanding and manipulating how 
-              software and hardware can come together end-to-end. My projects range from 
-              a CLI script for streamlining development projects
-              to a mock jury trials website. I’m focused on growing into a full-time
-              software engineering role where I can contribute my skills to products, 
-              systems, while improving my skills, and collaborating with a strong team.
-            </p>
-          </div>
-        </div>
+        <a class="btn btn-primary" role="button" href="./assets/Peyton-Ford-Resume.pdf">Download Resume</a>
+        <a class="btn btn-primary" href="#contact">Contact Info</a>
       </div>
     </div>
-
-    <h2 id="experience">Experience</h2>
 
     <div class="card-group">
       <div class="col-ms-6">
-        <h3>Software & Systems</h3>
-        <div class="card flex"><img class="card-img-left" src="./assets/checkmark.png" alt="-" width="32" />
+        <h3 class="text-blue"><strong>Software & Systems</strong></h3>
+        <div class="card flex-row border-0"><img class="card-img-top img-fluid h-100" style="width: 1.5vw;" src="./assets/checkmark.png" alt="-" />
           <div class="card-body">
-            <h5 class="card-title"><strong>Software Technician – Eagle Eye Networks</strong></h5>
+            <h5 class="card-title text-lightblue"><strong>Software Technician – Eagle Eye Networks</strong></h5>
             <p class="card-text">
               Contribute to software updates by refining, testing, and validating
               changes that flow through device and cloud pipelines for network
@@ -84,18 +72,18 @@
             </p>
           </div>
         </div>
-        <div class="card flex"><img class="card-img-left" src="./assets/checkmark.png" alt="-" width="32" />
+        <div class="card flex-row border-0"><img class="card-img-top img-fluid h-100" style="width: 1.5vw;" src="./assets/checkmark.png" alt="-" />
           <div class="card-body">
-            <h5 class="card-title"><strong>Linux & Firmware Configuration</strong></h5>
+            <h5 class="card-title text-lightblue"><strong>Linux & Firmware Configuration</strong></h5>
             <p class="card-text">
               Set up and configure firmware, Linux-based operating systems, and
               application software for secure, cloud-connected camera devices.
             </p>
           </div>
         </div>
-        <div class="card flex"><img class="card-img-left" src="./assets/checkmark.png" alt="-" width="32" />
+        <div class="card flex-row border-0"><img class="card-img-top img-fluid h-100" style="width: 1.5vw;" src="./assets/checkmark.png" alt="-" />
           <div class="card-body">
-            <h5 class="card-title"><strong>Docker & AWS Integration</strong></h5>
+            <h5 class="card-title text-lightblue"><strong>Docker & AWS Integration</strong></h5>
             <p class="card-text">
               Work with containerized services (Docker) and AWS-hosted systems as
               part of validating and deploying devices to production environments.
@@ -105,10 +93,10 @@
       </div>
 
       <div class="col-ms-6">
-        <h3>Development & Tooling</h3>
-        <div class="card flex"><img class="card-img-left" src="./assets/checkmark.png" alt="-" width="32" />
+        <h3 class="text-blue"><strong>Development & Tooling</strong></h3>
+        <div class="card flex-row border-0"><img class="card-img-top img-fluid h-100" style="width: 1.5vw;" src="./assets/checkmark.png" alt="-" />
           <div class="card-body">
-            <h5 class="card-title"><strong>Python & Go Scripts</strong></h5>
+            <h5 class="card-title text-lightblue"><strong>Python & Go Scripts</strong></h5>
             <p class="card-text">
               Contribute to and maintain scripts and configuration logic in
               Python/Go for automated testing, device provisioning, and
@@ -116,18 +104,18 @@
             </p>
           </div>
         </div>
-        <div class="card flex"><img class="card-img-left" src="./assets/checkmark.png" alt="-" width="32" />
+        <div class="card flex-row border-0"><img class="card-img-top img-fluid h-100" style="width: 1.5vw;" src="./assets/checkmark.png" alt="-" />
           <div class="card-body">
-            <h5 class="card-title"><strong>Troubleshooting & QA</strong></h5>
+            <h5 class="card-title text-lightblue"><strong>Troubleshooting & QA</strong></h5>
             <p class="card-text">
               Validate software behavior using logs, diagnostic tools, and test
               procedures to identify issues and support fixes in the pipeline.
             </p>
           </div>
         </div>
-        <div class="card flex"><img class="card-img-left" src="./assets/checkmark.png" alt="-" width="32" />
+        <div class="card flex-row border-0"><img class="card-img-top img-fluid h-100" style="width: 1.5vw;" src="./assets/checkmark.png" alt="-" />
           <div class="card-body">
-            <h5 class="card-title"><strong>Team Collaboration</strong></h5>
+            <h5 class="card-title text-lightblue"><strong>Team Collaboration</strong></h5>
             <p class="card-text">
               Work with engineers and technicians to reproduce bugs, refine test
               cases, and ensure devices meet quality and performance standards.
@@ -137,12 +125,12 @@
       </div>
     </div>
 
-    <h2 id="projects">Projects</h2>
+    <h2 class="text-blue" id="projects"><strong>Projects</strong></h2>
     <div class="card-group">
       <div class="card flex-row">
         <div class="card-body">
           <img src="./assets/project-1.png" class="card-img-top" alt="Project 1" width="1000" />
-          <h2 class="card-title">Developer Environment Launcher</h2>
+          <h2 class="card-title text-blue"><strong>Developer Environment Launcher</strong></h2>
           <p class="card-text">
             A bash application that builds and streamlines development of software
             projects through a CLI. This is including running builds, compilation,
@@ -157,7 +145,7 @@
       <div class="card flex-row">
         <div class="card-body">
           <img src="./assets/project-2.png" class="card-img-top" alt="Project 2" width="1000" />
-          <h2 class="card-title">Mock Jury Trials Website</h2>
+          <h2 class="card-title text-blue"><strong>Mock Jury Trials Website</strong></h2>
           <p class="card-text">
             A website to help defense attorneys prepare for jury trials by providing a 
             platform to create and manage mock trials. The site includes features for
@@ -168,24 +156,26 @@
       </div>
     </div>
 
-    <h2 id="contact">Contact Me</h2>
+    <h2 class="text-blue" id="contact"><strong>Contact Me</strong></h2>
 
     <p>
-      <img src="./assets/email.png" alt="Email" width="32" />
-      <a class="btn btn-dark" href="mailto:peytonford7@gmail.com">peytonford7@gmail.com</a>
+      <img src="./assets/email.png" alt="Email" style="width: 1.5vw;" />
+      <a href="mailto:peytonford7@gmail.com">peytonford7@gmail.com</a>
     </p>
 
     <p>
-      <img src="./assets/linkedin.png" alt="LinkedIn" width="32" />
-      <a class="btn btn-dark" href="https://www.linkedin.com/in/peyton-ford-58234b168">LinkedIn</a>
+      <img src="./assets/linkedin.png" alt="LinkedIn" style="width: 1.5vw;" />
+      <a href="https://www.linkedin.com/in/peyton-ford-58234b168">LinkedIn</a>
     </p>
 
-    <div aria-label="Section Buttons">
-      <a class="btn btn-primary" href="#about">About</a>
-      <a class="btn btn-primary" href="#experience">Experience</a>
-      <a class="btn btn-primary" href="#projects">Projects</a>
-      <a class="btn btn-primary" href="#contact">Contact</a>
-    </div>
+    <footer>
+      <div class="flex-row">
+        <a href="#about"><h3><strong>About</strong></h3></a>
+        <a href="#experience"><h3><strong>Experience</strong></h3></a>
+        <a href="#projects"><h3><strong>Projects</strong></h3></a>
+        <a href="#contact"><h3><strong>Contact</strong></h3></a>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
