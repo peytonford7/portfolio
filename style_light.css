@@ -1,50 +1,108 @@
-.nav-name,
-.nav-icons {
-  width: 33.333%;
+.body {
+    font-size: 100%;
+    line-height: 1.3;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: white;
+    color: black;
 }
 
-.nav-name {
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+#wallpaper_p {
+    font-size: 100%;
+    color: black;
+    width: 90%;
+    margin: 5px auto 0px 50px;
+    text-align: left;
+}
+
+#wallpaper_h1 {
+    font-size: 180%;
+    color: black;
+    margin: 0px auto 1px 50px;
+    text-align: left;
+}
+
+#wallpaper {
+    background: url('assets/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 1200px;
+    height: 350px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    margin: 0 auto;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: center;
+table#menu {
+    border: 0;
+    margin-top: 22px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.nav-icons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    gap: 1rem;
+table#menu td {
+    white-space: nowrap;
 }
 
-.nav-name,
-.nav-links {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+table#menu td a {
+    color: white !important;
+    background-color: rgb(51, 122, 183);
+    font-size: 110%;
+    border: 1px rgb(120, 120, 120) solid;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 4px;
 }
 
-.nav-name h3,
-.nav-links h3 {
-  margin: 0;
+table#menu td a.active {
+    color: black !important;
+    background-color: white;
+    font-weight: bold;
 }
 
-.text-title {
-    color: #3164bd;
+table#menu td a:hover {
+    text-decoration: none;
+    color: white !important;
+    background-color: rgb(99, 144, 204);
 }
 
-.text-subtitle {
-    color: #79a1be;
+.heading {
+    text-align: center;
 }
 
-.bg-nav {
-    background-color: #161719;
+.subheading {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 140%;
 }
-.bg-body {
-    background-color: #23252e;
+
+.project-item {
+    min-height: 300px;
+    min-width: 200px;
+    margin-bottom: 18px;
+}
+
+.tool-item {
+    min-height: 120px;
+    min-width: 200px;
+    border: 2px rgb(220, 220, 230) dotted;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+ul li::before {
+    margin-left: -2em;
 }
